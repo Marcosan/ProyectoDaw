@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Restaurante";
+}
+@section slider
+{
+    <div id="slider" style="height: 300px">
+        <!-- Start WOWSlider.com BODY section id=wowslider-container1 -->
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+
+                    <li>
+                        <img src="@Url.Content("~/Images/data1/images/i1.jpg")" alt="Buffet" title="Buffet" id="wows1_0"/>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Images/data1/images/i2.jpg")" alt="Cenas" title="Cenas" id="wows1_1"/>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Images/data1/images/i3.jpg")" alt="Típicos" title="Típicos" id="wows1_2"/>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Images/data1/images/i4.jpg")" alt="Nocturnos" title="Nocturnos" id="wows1_3"/>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Images/data1/images/i5.jpg")" alt="Eventos" title="Eventos" id="wows1_4"/>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Images/data1/images/i6.jpg")" alt="Paisajes" title="Paisajes" id="wows1_5"/>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Images/data1/images/i7.jpg")" alt="Clásicos" title="Clásicos" id="wows1_6"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="ws_bullets">
+                <div>
+                    <a href="#" title="Buffet">
+                        <img src="@Url.Content("~/Images/data1/tooltips/i1.jpg")" alt="Buffet"/>1</a>
+                    <a href="#" title="Cenas">
+                        <img src="@Url.Content("~/Images/data1/tooltips/i2.jpg")" alt="Cenas"/>2</a>
+                    <a href="#" title="Típicos">
+                        <img src="@Url.Content("~/Images/data1/tooltips/i3.jpg")" alt="Típicos"/>3</a>
+                    <a href="#" title="Nocturnos">
+                        <img src="@Url.Content("~/Images/data1/tooltips/i4.jpg")" alt="Nocturnos"/>4</a>
+                    <a href="#" title="Eventos">
+                        <img src="@Url.Content("~/Images/data1/tooltips/i5.jpg")" alt="Eventos"/>5</a>
+                    <a href="#" title="Paisajes">
+                        <img src="@Url.Content("~/Images/data1/tooltips/i6.jpg")" alt="Paisajes"/>6</a>
+                    <a href="#" title="Clásicos">
+                        <img src="@Url.Content("~/Images/data1/tooltips/i7.jpg")" alt="Clásicos"/>7</a>
+                </div>
+            </div>
+            <span class="wsl"><a href="http://wowslider.com">Software Slideshow</a> by WOWSlider.com
+                v4.8</span>
+            <a href="#" class="ws_frame"></a>
+            <div class="ws_shadow"></div>
+        </div>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/engine1/wowslider.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/engine1/script.js")"></script>
+        <!-- End WOWSlider.com BODY section -->
+    </div>
+}
+<section class="homepage_widgets_bg clearfix">
+	<div class="container clearfix">
+	<div id="fb-root"> </div>
+	<script type="text/javascript">
+	    (function (d, s, id) {
+	        var js, fjs = d.getElementsByTagName(s)[0];
+	        if (d.getElementById(id)) return;
+	        js = d.createElement(s); js.id = id;
+	        js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+	        fjs.parentNode.insertBefore(js, fjs);
+	    }(document, 'script', 'facebook-jssdk'));
+	</script>	 
+	</div>
+</section>
+<section class="container clearfix">
+    <div class="line">
+            </div>
+            <div class="clear padding40">
+            </div>
+            <div id="restaurantesDisponibles" class="col_1_3" >
+                <div class="features">
+                    <div class="title clearfix">
+                        <img src="images/code-icon.png" alt="" class="alignleft" />
+                        <h3>Restaurantes disponibles</h3>
+
+                    </div>
+                    <div id="restaurantes">
+                        <ul id="listaRestaurante">
+
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            </div>
+    <h2>Restaurante</h2>
+    <p>@ViewBag.valor</p>
+</section>

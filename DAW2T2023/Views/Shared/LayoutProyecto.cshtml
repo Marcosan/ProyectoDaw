@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"> -->
+    <title>GeoDinner</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <link rel="shortcut icon" href="@Url.Content("~/Images/logoGeoDinner.jpg")" />
+    @Styles.Render("~/Content/themes/base/css")
+    @Scripts.Render("~/bundles/jquery")
+    <link href="@Url.Content("~/Content/estilos/style.css")" rel="stylesheet"/>
+
+    @if (ViewBag.accion.Equals("Index", StringComparison.Ordinal))
+    {
+        <link href="@Url.Content("~/Content/estilos/flexslider.css")" rel="stylesheet"/>
+        <link href="@Url.Content("~/Content/estilos/prettyPhoto.css")" rel="stylesheet"/>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/script/all-in-one.js")"></script>
+        
+        <script type="text/javascript" src="@Url.Content("~/Scripts/script/setup.js")"></script>  
+        <script type="text/javascript" src="@Url.Content("~/Scripts/script/main.js")"></script> 
+    }
+    else if (ViewBag.accion.Equals("Restaurante", StringComparison.Ordinal))
+    {
+        <link href="@Url.Content("~/Scripts/engine1/style.css")" rel="stylesheet"/>
+        <link href="@Url.Content("~/Content/estilos/restaurante.css")" rel="stylesheet"/>
+    }
+    
+@*<link href="@Url.Content("~/Content/estilos/flexslider.css")" rel="stylesheet"/> *@
+    <style type="text/css">
+        .demobar
+        {
+            display: none;
+        }
+
+        #demo-side-bar
+        {
+            top: 53px!important;
+            left: 90%!important;
+            display: block!important;
+        }
+    </style>
+</head>
+<body>
+    <header class="header_bg clearfix">
+        <div class="container clearfix">
+            <!-- Social -->
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.facebook.com/GeoDinnerWebPage?ref=hl" target="_blank">
+                        <img src="@Url.Content("~/Images/facebook.png")" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <img src="@Url.Content("~/Images/twitter.png")" width="24" height="24" alt="Twitter">
+                    </a>
+                </li>
+            </ul>
+            <!-- /Social -->
+            <!-- Logo -->
+            <div class="logo" style="width: 400px">
+                <div id="logoImagen">
+                    <a href="index.html">
+                        <img src="@Url.Content("~/Images/logoGeoDinner.jpg")" alt="logoGeoDinner"/>
+                    </a>
+                </div>
+                <div id="letrasLogo">
+                    <h1 id="titulo">GeoDinner</h1>
+                </div>
+
+            </div>
+            <!-- /Logo -->
+
+            <!-- Master Nav -->
+            <nav class="main-menu">
+                <ul>
+
+                    <li>@Html.ActionLink("inicio", "Index", null, new { @class = "linkMenu" })</li>
+                    <li>@Html.ActionLink("Restaurantes", "Restaurante", new { value = "Texto prueba" }, new { @class = "linkMenu" })
+                    </li>
+                    <li><a href="tuzona.html">Tu zona</a> </li>
+                    <li><a href="planificacion.html">Planificacion</a> </li>
+                    <li><a href="registro.html">Registro</a> </li>
+                </ul>
+            </nav>
+            <!-- /Master Nav -->
+
+            <!-- LOGIN -->
+            <div id="login">
+            </div>
+
+        </div>
+    </header>
+    <div class="clear">
+    </div>
+    @RenderSection("slider", required: false)
+
+    @RenderBody()
+
+    <footer class="footer_bg_bottom clearfix">
+        <div class="footer_bottom container">
+            <div class="col_2_3">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+
+                <div class="clear padding20">
+                </div>
+
+                <p>
+                    &copy; Todos los Derechos Reservados. Marco Mendoza - Dimitri Laaz - Gabriel Falcones
+                    - Emilio Piedrahita
+                </p>
+
+            </div>
+
+            <div class="clear padding20">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

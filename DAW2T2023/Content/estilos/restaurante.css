@@ -1,0 +1,160 @@
+#slider
+{
+    background:url(../../Images/banner-bg.jpg) repeat 13px 0;
+}
+
+#listaRestaurante
+{
+	max-height:500px;
+	max-width:380px;
+	overflow: auto;
+	margin: 0px;
+}
+
+#detallesRestaurantes
+{
+	float:left;
+	text-align: justify;
+	overflow:auto;
+	max-height:524px;
+	max-width:380px;
+}
+
+.listElement:hover
+{
+	background-color: #554E34;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+#comentarios
+{
+	display: none;
+}
+
+#platos
+{
+	/*float:left;
+	margin: 0px;
+	max-height:500px;
+	max-width:380px;
+	overflow: auto;*/
+	margin: 0px;
+	max-width:240px;
+	min-width: 240px;
+	max-height:524px;
+	overflow: auto;
+	float: left;
+}
+#platos:hover
+{
+	cursor: pointer;
+}
+
+#platos div
+{
+	padding: 5px;
+	border: #272007 groove 2px;
+}
+
+#platos p
+{
+	margin: 0px;
+	background-color: #554E34;
+	display: none;
+	color: #ffffff;
+	padding: 1px;
+}
+
+#platos h4
+{
+	background-color: #272007;
+	color: #ffffff;
+	margin: 0px;
+	text-align: center;
+	
+	
+}
+#platos h4 img
+{
+	float: right;
+	padding-right: 5px;
+	padding-top: 5px;
+	
+	
+}
+
+#calendarioUsuario
+{
+	margin-top: 20px;
+}
+.calendarDay
+{
+	
+	width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+.calendarDay:hover
+{
+	cursor: pointer;
+}
+.sombraDay{
+    position: relative;
+    float: left;
+    padding: 1em;
+    margin: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.sombraDay:before, .sombraDay:after{
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+
+.sombraDay:before{
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.sombraDay:after{
+    bottom: 15px;
+    width: 50%;
+    height: 20%;
+    right: 10px;
+    left: auto;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+
+
+@media (max-width: 767px) {
+	#platos
+	{
+		max-width: 365px;
+		min-width: 365px;
+	}
+
+	#detallesRestaurantes,#platos,#restaurantesDisponibles
+	{
+		margin-bottom: 30px;
+	}
+	#restaurantesDisponibles .title
+	{
+		max-width: 365px;
+		
+		padding-right: 0px;
+	}
+}

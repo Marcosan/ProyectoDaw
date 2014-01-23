@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>4.8</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <Captions>true</Captions>
+            <CaptionsEffect>slide</CaptionsEffect>
+            <Controls>true</Controls>
+            <GalleryName>galeria</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>blur</ImageEffect>
+            <ImageFillColor>#FFFFFF</ImageFillColor>
+            <ImageHeight>300</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files/WOW Slider/templates/backgnd/box/</ImageTemplate>
+            <ImageTemplateName>Box</ImageTemplateName>
+            <ImageWidth>960</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>true</OrderRandom>
+            <PlayPause>true</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>C:/wamp/www/GeoDinnerTarea2/public_html/restaurantes.html</PublishFileName>
+            <PublishIndex>restaurantes.html</PublishIndex>
+            <PublishPath>C:/wamp/www/GeoDinnerTarea2/public_html</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>page</PublishType>
+            <RelativePath>true</RelativePath>
+            <ShowBullets>true</ShowBullets>
+            <ShowTooltips>true</ShowTooltips>
+            <SlideshowDelay>50</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>true</StopOnHover>
+            <TemplateName>box</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>false</noFrame>
+        </Settings>
+        <Images RelativePath="true">
+            <Image>
+                <url>i1.jpg</url>
+                <title>Buffet</title>
+            </Image>
+            <Image>
+                <url>i2.jpg</url>
+                <title>Cenas</title>
+            </Image>
+            <Image>
+                <url>i3.jpg</url>
+                <title>Típicos</title>
+            </Image>
+            <Image>
+                <url>i4.jpg</url>
+                <title>Nocturnos</title>
+            </Image>
+            <Image>
+                <url>i5.jpg</url>
+                <title>Eventos</title>
+            </Image>
+            <Image>
+                <url>i6.jpg</url>
+                <title>Paisajes</title>
+            </Image>
+            <Image>
+                <url>i7.jpg</url>
+                <title>Clásicos</title>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>
